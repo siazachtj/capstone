@@ -4,7 +4,6 @@
 ---
 
 
-Data: https://drive.google.com/drive/folders/16ny9q1lS7C3g7_AsOu3AeDXQsv1Pd8ty?usp=sharing
 
 # Executive Summary: Collaborative Filtering Recommendation System for board game reommendations using the "K-Nearest Neighbour" predictive model from Sci-Kit Suprise library 
 ## Background
@@ -138,7 +137,7 @@ Future work could involve a model that can account for more than the users and r
 
 ---
 The links to the dataset, streamlit app and website are below<br>
-App : https://siazachtj-capstone-codestreamlit-dihd4i.streamlit.app/
+App : https://siazachtj-capstone-codestreamlit-5es7vw.streamlit.app/
 <br>
 Website: https://boardgamegeek.com/
 <br>
