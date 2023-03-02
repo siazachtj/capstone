@@ -38,13 +38,13 @@ def build_model(df_new_user,time,genres,gameweight):
             percentile_1 = 33
             percentile_2 = 66
             if gameweight == 1:
-                filtered_games_1 = df_test_2[df_test_2['MfgPlaytime'] < percentile_1]
+                filtered_games_1 = df_test_2[df_test_2['GameWeight'] < percentile_1]
                 df_test_2 = filtered_games_1
             elif gameweight == 2:
-                filtered_games_1 = df_test_2[df_test_2['MfgPlaytime'] < percentile_2]
+                filtered_games_1 = df_test_2[df_test_2['GameWeight'] < percentile_2]
                 df_test_2 = filtered_games_1
             elif gameweight == 3:
-                filtered_games_1 = df_test_2[df_test_2['MfgPlaytime'] > percentile_2]
+                filtered_games_1 = df_test_2[df_test_2['GameWeight'] > percentile_2]
                 df_test_2 = filtered_games_1
 
             if genres == 'Yes':
@@ -76,8 +76,8 @@ show_slider = st.checkbox("Do you have more specific requirements for your recom
 container = st.container()
 if show_slider:
     genres = container.radio("Are you looking for a family orientated game?:", ("Yes", "No"))
-    time = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?:", min_value=1, max_value=3,key='time')
-    gameweight = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?:", min_value=1, max_value=3,key='gameweight')
+    time = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as little time as possible and 3 being several hours):", min_value=1, max_value=3,key='time')
+    gameweight = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as easy to play as possible and 3 being a high difficulty game):", min_value=1, max_value=3,key='gameweight')
 
 for i in range(5):
     game_name = st.selectbox(f"Game {i+1}:", [''] + list(games_csv2['Name']))
