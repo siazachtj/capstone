@@ -121,7 +121,8 @@ With our business context in mind, we priortised the model with a higher ability
 
 
 ## Model Deployment:
-We will be deploying our model to streamlit and will be available for demonstration.
+We will be deploying our model to streamlit and will be available for demonstration. Our model uses KNNBasic to predict games that would be relevant to the user and returns the top 10 games sorted by predicted rating.
+There is a fitler that allows you to have a more customised experience via a 
 
 ## Conclusion:
 Our model is a powerful tool that is capable of providing highly accurate recommendations for users, making it an invaluable asset to the platform. As users become more active and leave more reviews, our model's ability to provide insightful and relevant recommendations will only increase, resulting in even greater user satisfaction.
