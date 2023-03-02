@@ -135,7 +135,7 @@ Future work could involve a model that can account for more than the users and r
 
 ---
 The links to the dataset, streamlit app and website are below<br>
-App : To be updated
+App : https://siazachtj-capstone-codestreamlit-dihd4i.streamlit.app/
 <br>
 Website: https://boardgamegeek.com/
 <br>
