@@ -7,7 +7,7 @@ import pickle
 import numpy as np
 # Load the dataset
 
-with open('data/data_for_model/data_for_model.pkl', 'rb') as f:
+with open('code/data_streamlit/data_for_model.pkl', 'rb') as f:
     # Load the contents of the file using pickle.load()
     data_for_model = pickle.load(f)
     
@@ -64,7 +64,7 @@ def build_model(df_new_user,time,genres,gameweight):
 
 # Load data
 not_user_list = list(data_for_model['BGGId'].unique())
-games_csv2 = pd.read_csv('data/no_null_user_ratings/games_after_2010.csv')
+games_csv2 = pd.read_csv('code/data_streamlit/games_after_2010.csv')
 games_csv2 = games_csv2[games_csv2['YearPublished'] > 2016]
 # Set up Streamlit app
 st.title('Game Recommender')
