@@ -77,7 +77,7 @@ container = st.container()
 if show_slider:
     genres = container.radio("Are you looking for a family orientated game?:", ("Yes", "No"))
     time = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as little time as possible and 3 being several hours):", min_value=1, max_value=3,key='time')
-    gameweight = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as easy to play as possible and 3 being a high difficulty game):", min_value=1, max_value=3,key='gameweight')
+    gameweight = st.slider(f"On a scale of of 1 to 3 what is your preference on game difficulty?(1 being as easy to play as possible and 3 being a high difficulty game):", min_value=1, max_value=3,key='gameweight')
 else:
     genres = 0
     time = 0
