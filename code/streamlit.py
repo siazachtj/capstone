@@ -16,7 +16,7 @@ reader = Reader(rating_scale=(1, 10))
 data = Dataset.load_from_df(data_for_model[['Username','BGGId', 'Rating']],reader)
 
 # Define function to load data and build model
-def build_model(df_new_user,time,genres,gameweight):
+def build_model(df_new_user,time=0,genres=0,gameweight=0):
     # Create new user DataFrame
     with st.spinner('Building model...'):
         df_new_user['Username'] = 'demo_user'
