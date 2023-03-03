@@ -78,7 +78,12 @@ if show_slider:
     genres = container.radio("Are you looking for a family orientated game?:", ("Yes", "No"))
     time = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as little time as possible and 3 being several hours):", min_value=1, max_value=3,key='time')
     gameweight = st.slider(f"On a scale of of 1 to 3 how much time are you willing to spend on a single game?(1 being as easy to play as possible and 3 being a high difficulty game):", min_value=1, max_value=3,key='gameweight')
-
+else:
+    genres = 0
+    time = 0
+    gameweight = 0
+    
+    
 for i in range(5):
     game_name = st.selectbox(f"Game {i+1}:", [''] + list(games_csv2['Name']))
     if game_name:
